@@ -1,30 +1,44 @@
-Customizable Quiz Application
-Project Description
+# Customizable Quiz Application
+
+## Project Description
+
 This project is a flexible quiz application that allows users to test their knowledge across various topics. It leverages the Open Trivia Database (OpenTDB) to fetch quiz questions in real-time, offering a dynamic and personalized quiz experience.
 
-How to Play
-Choose Your Quiz:
+## How to Play
 
-Visit the OpenTDB API Configuration page.
-Select your preferred category, difficulty, and question type.
-Copy the generated API URL.
-Retrieve Quiz Data:
+1. **Choose Your Quiz**:
+   - Visit the [OpenTDB API Configuration page](https://opentdb.com/api_config.php).
+   - Select your preferred category, difficulty, and question type.
+   - Copy the generated API URL.
 
-Open a new tab in your browser and paste the copied API URL.
-The quiz data will be displayed in JSON format.
-Prepare the Quiz:
+2. **Retrieve Quiz Data**:
+   - Open a new tab in your browser and paste the copied API URL.
+   - The quiz data will be displayed in JSON format.
 
-Copy the list of questions from the JSON response.
-Remove the response_code and results keys, keeping only the list of questions.
-Update the Project:
+3. **Prepare the Quiz**:
+   - Copy the list of questions from the JSON response.
+   - Remove the `response_code` and `results` keys, keeping only the list of questions.
 
-Open the data.py file in your project directory.
-Replace the existing data with the new list of questions.
-Ensure the code is properly formatted and syntax is correct.
-Play:
+4. **Update the Project**:
+   - Open the `data.py` file in your project directory.
+   - Replace the existing data with the new list of questions.
+   - Ensure the code is properly formatted and syntax is correct.
 
-Run the application to enjoy your customized quiz!
-Features
-Customizable Quizzes: Choose from various topics, difficulty levels, and question types.
-Real-time Data: Fetch quiz questions directly from OpenTDB, ensuring up-to-date content.
-Easy Setup: Simple instructions to customize and play your quiz.
+5. **Play**:
+   - Run the application to enjoy your customized quiz!
+
+## Features
+
+- **Customizable Quizzes**: Choose from various topics, difficulty levels, and question types.
+- **Real-time Data**: Fetch quiz questions directly from OpenTDB, ensuring up-to-date content.
+- **Easy Setup**: Simple instructions to customize and play your quiz.
+
+## Dependencies
+
+- Python 3.x
+- Requests (if fetching data programmatically)
+- JSON (for data handling)
+
+## License
+
+This project is licensed under the MIT License.
